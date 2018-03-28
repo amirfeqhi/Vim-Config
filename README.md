@@ -1,3 +1,5 @@
+# Vim Configuration
+
 Vim is a command-line base text editor and it’s so powerful, fast and flexible.
 Also, Vim is my favorite and default editor for coding. Frankly, I must
 admit that is hard to understand at the very first glance but believe it
@@ -10,6 +12,8 @@ There is a file called “.vimrc” which is wrapped up all of your configs.
 I thought sharing my Vim config could be helpful, and also It’s a shortcut for someone who wants to start using it.
 
 At the end it should look like this:
+
+![alt Vim](https://dayknow.ir/wp-content/uploads/2018/03/Screen-Shot-2018-03-28-at-6.55.17-PM-1024x640.png)
 
 Suggested vim tutorial: http://www.openvim.com/
 
