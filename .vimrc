@@ -9,6 +9,7 @@ set mouse=a
 set re=1
 set cursorline
 set colorcolumn=80
+" set nuw=1
 
 """" START Vundle Configuration
 
@@ -27,6 +28,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
 Plugin 'benmills/vimux'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'powerline/powerline'
 
 " Generic Programming Support
 Plugin 'honza/vim-snippets'
