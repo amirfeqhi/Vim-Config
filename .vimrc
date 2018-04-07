@@ -36,6 +36,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'janko-m/vim-test'
 Plugin 'Townk/vim-autoclose'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'Valloric/MatchTagAlways'
 
 " Markdown / Writting
 Plugin 'reedes/vim-pencil'
