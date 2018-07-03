@@ -4,11 +4,12 @@
 set nocompatible
 syntax on
 set nowrap
-set encoding=utf-8
+set encoding=UTF-8
 set mouse=a
 set re=1
 set cursorline
 set colorcolumn=80
+set omnifunc=syntaxcomplete#Complete
 " set nuw=1
 
 """" START Vundle Configuration
@@ -27,28 +28,28 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 Plugin 'SirVer/ultisnips'
-Plugin 'benmills/vimux'
-Plugin 'Shougo/vimproc.vim'
+" Plugin 'benmills/vimux'
+" Plugin 'Shougo/vimproc.vim'
 Plugin 'powerline/powerline'
 
 " Generic Programming Support
 Plugin 'honza/vim-snippets'
-Plugin 'janko-m/vim-test'
+" Plugin 'janko-m/vim-test'
 Plugin 'Townk/vim-autoclose'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'Valloric/MatchTagAlways'
 
 " Markdown / Writting
-Plugin 'reedes/vim-pencil'
-Plugin 'tpope/vim-markdown'
-Plugin 'jtratner/vim-flavored-markdown'
+" Plugin 'reedes/vim-pencil'
+" Plugin 'tpope/vim-markdown'
+" Plugin 'jtratner/vim-flavored-markdown'
 
 " Git Support
 Plugin 'kablamo/vim-git-log'
 Plugin 'tpope/vim-fugitive'
 
 " Theme / Interface
-Plugin 'AnsiEsc.vim'
+" Plugin 'AnsiEsc.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
@@ -99,6 +100,7 @@ highlight LineNr guibg=#2e3038 guifg=#a5a6a7
 highlight CursorLineNr guibg=#1e1f28
 highlight CursorLine guibg=#303244
 highlight Pmenu guibg=#292c33
+highlight VertSplit guibg=#444758 guifg=#444758
 
 " Vim-Airline Configuration
 let g:airline#extensions#tabline#enabled = 1
@@ -197,6 +199,8 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+map <silent> w :EraseBadWhitespace<CR>
+
 " Highlight all instances of word under cursor, when idle.
 " Useful when studying strange source code.
 " Type z/ to toggle highlighting on/off.
@@ -219,3 +223,5 @@ function! AutoHighlightToggle()
     return 1
   endif
 endfunction
+
+imap <C-Return> <CR><CR><C-o>k<Tab>
