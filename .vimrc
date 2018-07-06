@@ -36,8 +36,9 @@ Plugin 'powerline/powerline'
 Plugin 'honza/vim-snippets'
 " Plugin 'janko-m/vim-test'
 Plugin 'Townk/vim-autoclose'
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 Plugin 'Valloric/MatchTagAlways'
+Plugin 'w0rp/ale'
 
 " Markdown / Writting
 " Plugin 'reedes/vim-pencil'
@@ -169,24 +170,39 @@ let g:indentLine_concealcursor=0
 let g:ycm_key_list_select_completion = []
 let g:ycm_key_list_previous_completion = []
 let g:ycm_key_list_stop_completion = ['<Enter>']
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_auto_trigger = 1
+" let g:ycm_show_diagnostics_ui = 0
+" let g:pymode_rope_complete_on_dot = 0
 set completeopt-=preview
 
 " Auto-Close Configuration
 let g:AutoClosePumvisible = {"ENTER": "", "ESC": ""}
 
 " Vim-Syntastic Configuration
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_check_on_w = 1
-let g:syntastic_enable_highlighting = 0
-let g:syntastic_error_symbol = "✗"
-let g:syntastic_warning_symbol = "⚠"
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 0
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_check_on_w = 1
+" let g:syntastic_enable_highlighting = 0
+" let g:syntastic_error_symbol = "✗"
+" let g:syntastic_warning_symbol = "⚠"
+" let g:syntastic_mode_map = { 'passive_filetypes': ['python'] }
+
+" ALE Configuration
+let g:ale_sign_error = '✗'
+let g:ale_sign_warning = '⚠'
+let g:airline#extensions#ale#enabled = 1
+
+" Devicons configuration
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_nerdtree = 1
+let g:webdevicons_enable_airline_statusline = 1
 
 """""""""""""""""""""""""""""""""""""
 " Mappings configurationn
