@@ -13,7 +13,7 @@ I thought sharing my Vim config could be helpful, and also It’s a shortcut for
 
 At the end it should look like this:
 
-![alt Vim](https://dayknow.ir/wp-content/uploads/2018/03/Screen-Shot-2018-03-28-at-6.55.17-PM-1024x640.png)
+![alt Vim](https://image.ibb.co/j4C36d/Screenshot_2018_07_04_15_47_22.png)
 
 Suggested vim tutorial: http://www.openvim.com/
 
