@@ -209,6 +209,7 @@ let g:webdevicons_enable_airline_statusline = 1
 """""""""""""""""""""""""""""""""""""
 map <C-n> :NERDTreeToggle<CR>
 map <C-m> :TagbarToggle<CR>
+au VimEnter *  NERDTree
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
