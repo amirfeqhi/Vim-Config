@@ -11,7 +11,7 @@ There is a file called “.vimrc” which is wrapped up all of your configs.
 
 I thought sharing my Vim config could be helpful, and also It’s a shortcut for someone who wants to start using it.
 
-At the end it should look like this:
+At the end it should looks like this:
 
 ![alt Vim](https://image.ibb.co/j4C36d/Screenshot_2018_07_04_15_47_22.png)
 
